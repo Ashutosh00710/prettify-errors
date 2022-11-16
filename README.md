@@ -1,3 +1,13 @@
+## Installation
+
+```bash
+npm install prettify-errors
+```
+
+```bash
+yarn add prettify-errors
+```
+
 ### Usage
 
 ```typescript
@@ -5,7 +15,7 @@ import { PrettifyError } from 'prettify-errors'
 
 class TestClass {
   private readonly prettifyError = new PrettifyError({
-    className: TestClass.name
+    className: TestClass.name,
   })
 
   sampleFunction() {
