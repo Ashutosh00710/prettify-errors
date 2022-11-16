@@ -1,18 +1,18 @@
 {
-  "name": "pretty-errors",
-  "version": "0.0.0",
+  "name": "prettify-errors",
+  "version": "0.0.1",
   "description": "Prettify your errors",
   "keywords": [],
-  "main": "dist/pretty-errors.umd.js",
-  "module": "dist/pretty-errors.es5.js",
-  "typings": "dist/types/pretty-errors.d.ts",
+  "main": "dist/lib/prettify-errors.js",
+  "module": "dist/lib/prettify-errors.js",
+  "typings": "dist/types/prettify-errors.d.ts",
   "files": [
     "dist"
   ],
   "author": "Ashutosh <starcdwivedi@gamil.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ashutosh00710/pretty-errors.git"
+    "url": "git+https://github.com/Ashutosh00710/prettify-errors.git"
   },
   "license": "MIT",
   "engines": {
