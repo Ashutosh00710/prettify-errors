@@ -12,7 +12,7 @@
   "author": "Ashutosh <starcdwivedi@gamil.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Ashutosh00710/pretty-errors.git"
   },
   "license": "MIT",
   "engines": {
