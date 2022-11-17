@@ -77,9 +77,11 @@ export class Parser {
         }
 
         const properties = {
-          fileName: lineMatch[2].includes('file:///')
-            ? lineMatch[2].substring(8)
-            : lineMatch[2] || null,
+          fileName: lineMatch[2]
+            ? lineMatch[2].includes('file:///')
+              ? lineMatch[2].substring(8)
+              : lineMatch[2]
+            : null,
           lineNumber: parseInt(lineMatch[3], 10) || null,
           functionName: functionName,
           typeName: typeName,
