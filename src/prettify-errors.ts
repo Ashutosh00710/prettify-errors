@@ -15,11 +15,15 @@ export class PrettifyError {
     lineNumber: number,
     columnNumber: number
   ) {
+    let leftSpaceLength = Math.abs(String(start).length - String(end).length)
+    let leftSpace = ''
+    while (leftSpaceLength--) leftSpace += ' '
     for (let i = start; i <= end; i++) {
       if (i !== lineNumber) {
-        console.log('  ' + (i - 1) + ' |' + lines[i - 1])
+        const spc = String(i).length - leftSpace.length !== 0 ? '' : leftSpace
+        console.log('  ' + i + spc + ' |' + lines[i - 1])
       } else {
-        console.log('> ' + (i - 1) + ' |' + lines[i - 1])
+        console.log('> ' + i + ' |' + lines[i - 1])
         let col = columnNumber,
           space = ''
         while (col-- > 1) {

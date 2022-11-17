@@ -1,6 +1,6 @@
 {
   "name": "prettify-errors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Prettify your errors",
   "keywords": [],
   "main": "dist/lib/prettify-errors.js",
